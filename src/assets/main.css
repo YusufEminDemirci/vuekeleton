@@ -1,15 +1,23 @@
-@import 'styles/font.css';
+@import 'tailwindcss';
+@import './styles/font.css' layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
 
-* {
-  @apply m-0 p-0 box-border;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-family: Nunito, monospace;
+  }
 }
 
-:root {
-  font-family: 'Nunito', sans-serif;
+@theme {
+  --font-nunito: Nunito, monospace;
 }
 
 #app {
