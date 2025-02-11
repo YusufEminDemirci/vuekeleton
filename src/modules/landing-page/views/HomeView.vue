@@ -47,7 +47,7 @@ const currentYear = computed(() => new Date().getFullYear())
 
 <template>
   <div
-    class="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white font-sans overflow-x-hidden"
+    class="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white font-sans"
   >
     <!-- Header -->
     <header class="container mx-auto px-4 py-6">
