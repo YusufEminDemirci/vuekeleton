@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1 transition-transform duration-300"
+    class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
   >
     <Icon :icon="feature.icon" class="text-5xl text-indigo-500 mb-4" />
     <h3 class="text-xl font-semibold mb-2">{{ feature.title }}</h3>
