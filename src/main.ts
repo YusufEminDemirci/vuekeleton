@@ -7,10 +7,7 @@ import { createApp } from 'vue'
 const app = createApp(App)
 
 /* I18n */
-import { createI18n } from 'vue-i18n'
-const i18n = createI18n({
-  // something vue-i18n options here ...
-})
+import { i18n } from '@/locales'
 app.use(i18n)
 
 /* Pinia */
