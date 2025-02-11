@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { Icon } from '@iconify/vue'
-import FeatureCard from '../layouts/FeatureCard.vue'
+import FeatureCard from '../layouts/feature-card.vue'
 
 const mobileMenuOpen = ref(false)
 const toggleMobileMenu = () => (mobileMenuOpen.value = !mobileMenuOpen.value)
