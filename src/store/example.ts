@@ -1,7 +1,7 @@
-import { acceptHMRUpdate, defineStore } from 'pinia'
+import { acceptHMRUpdate, defineStore, storeToRefs } from 'pinia'
 import { type Ref, ref } from 'vue'
 
-export const exampleStore = defineStore('example-store', () => {
+export const useExampleStore: any = defineStore('example-store', () => {
   const count: Ref<number> = ref(0)
 
   function increment(): void {
@@ -19,5 +19,5 @@ export const exampleStore = defineStore('example-store', () => {
 
 /* HMR Support - (https://pinia.vuejs.org/cookbook/hot-module-replacement.html#HMR-Hot-Module-Replacement-) */
 if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(exampleStore, import.meta.hot))
+  import.meta.hot.accept(acceptHMRUpdate(useExampleStore, import.meta.hot))
 }
