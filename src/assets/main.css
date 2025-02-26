@@ -2,7 +2,9 @@
 @import './styles/font.css' layer(base);
 
 @layer base {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
   }
 
